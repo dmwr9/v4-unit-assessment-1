@@ -64,7 +64,7 @@ describe('Unit Assessment 2 - JavaScript 3', function () {
       expect(groceries).not.toEqual(jasmine.arrayContaining(['teststring']))
     })
     it('should use splice', async function() {
-      let result = await countFiles(jsFile, '.splice(', 1)
+      let result = await countFiles(jsFile, '.splice(index, 1)')
       expect(result).toEqual(true)
     })
   })

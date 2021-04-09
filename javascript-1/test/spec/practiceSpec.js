@@ -102,7 +102,7 @@ describe('Unit Assessment 1 - JavaScript 1', function () {
       expect(faveColors[2] === colorCopy[2]).toEqual(true)
     })
     it('should use slice method', async function() {
-      let response = await countFiles(jsFile, 'faveColors.slice(')
+      let response = await countFiles(jsFile, 'faveColors.slice()')
       expect(response).toEqual(true)
     })
   })
@@ -112,7 +112,7 @@ describe('Unit Assessment 1 - JavaScript 1', function () {
       expect(colorCopy.length).toBe(4)
     })
     it('should use push method', async function() {
-      let response = await countFiles(jsFile, 'colorCopy.push(')
+      let response = await countFiles(jsFile, 'colorCopy.push()')
       expect(response).toEqual(true)
     })
   })
